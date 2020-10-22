@@ -1,9 +1,10 @@
 ---
 title: ABOUT
 layout: page
-excerpt: ''
 date: 2016-03-24
 ---
+
+This is a demo of the connectome hugo theme.
 
 We host reading clubs and seminars on neuroscience, machine learning, complex networks and intelligence.
 
