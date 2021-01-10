@@ -20,6 +20,16 @@ menu:
       weight: 1
       identifier: posts
       url: /posts/
+    - name:
+      weight: 2
+      identifier: tags
+      url: /tags/
+      pre: '<i class="fas fa-tags"></i>'
+    - name:
+      weight: 3
+      identifier: graph
+      url: /graph
+      pre: '<i class="fas fa-project-diagram"></i>'
 
 taxonomies:
     tag: "tags"
@@ -37,7 +47,6 @@ params:
   powered_by: "love" # Optional, controls name display on footer
   hide_author: false # Optional, set true to hide author name on posts
   images: # Suggested, controls default OpenGraph images controls author name display on meta tag
-  graphbutton: true,
   github: "kausalflow" # Optional, to display link to github account in menu bar
   twitter: "" # Optional, to display link to twitter account in menu bar
   author: "KausalFlow" # Default author name and the name to be shown in the footer
