@@ -36,7 +36,7 @@ taxonomies:
     link: "links"
 
 params:
-  theme_variant: "lumen" # possible value for the theme_variant `cerulean,cosmo,cyborg,darkly,flatly,journal,litera,lumen,lux,materia,minty,pulse,sandstone,simplex,slate,solar,spacelab,superhero,united,yeti`
+  theme_variant: "united" # possible value for the theme_variant `cerulean,cosmo,cyborg,darkly,flatly,journal,litera,lumen,lux,materia,minty,pulse,sandstone,simplex,slate,solar,spacelab,superhero,united,yeti`
   description: "Connectume is a hugo theme for online communities such as reading clubs."
   favicon: "/logos/logo-square.png" # Path to favicon
   logo: "/logos/logo-square.png" # logo of the website

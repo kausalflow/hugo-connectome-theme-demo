@@ -8,6 +8,7 @@ authors:
   - KausalFlow
 links:
   - tutorials/link-articles.md
+  - tutorials/_index.md
 weight: 1
 ---
 

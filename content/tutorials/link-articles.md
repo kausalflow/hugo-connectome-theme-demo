@@ -7,9 +7,7 @@ tags:
 authors:
   - KausalFlow
 links:
-  - snm/single-neuron-model.md
-  - snm/limitations-srm-contd-and-coding.md
-  - tags/gauss-markov-theorem
+  - tutorials/_index.md
 weight: 4
 ---
 

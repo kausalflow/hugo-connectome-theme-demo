@@ -7,12 +7,11 @@ authors:
 tags:
   - Tutorial
 links:
-  - snm/single-neuron-model.md
-  - snm/limitations-srm-contd-and-coding.md
+  - tutorials/_index.md
 references:
   - name: "Hugo (This is a demo reference)"
     link: "https://gohugo.com"
-weight: 6
+weight: 7
 ---
 
 One could also add references to the post. Just add the following to the meta data of the post.
