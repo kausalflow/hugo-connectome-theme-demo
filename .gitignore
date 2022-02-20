@@ -30,3 +30,5 @@ Temporary Items
 resources/_gen
 
 public
+
+.hugo_build.lock

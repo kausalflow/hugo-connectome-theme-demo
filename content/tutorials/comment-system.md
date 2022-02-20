@@ -16,6 +16,10 @@ Hugo connectome supports two comment systems:
 - utteranc.es, and
 - giscus.
 
+{{< message class="warning" title="Optional" >}}
+This step is optional. It is up to the user to decide whether to configure a comment system or not.
+{{< /message >}}
+
 Here is a demo config. We put both giscus and utterances here but we only `use: "giscus"`.
 
 
