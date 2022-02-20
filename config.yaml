@@ -32,6 +32,7 @@ menu:
       pre: '<i class="fas fa-project-diagram"></i>'
 
 taxonomies:
+    category: "categories"
     tag: "tags"
     link: "links"
 
