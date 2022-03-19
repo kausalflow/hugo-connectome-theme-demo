@@ -78,3 +78,7 @@ outputs:
     - "RSS"
     - "data"
     - "network"
+
+
+ignoreErrors:
+  - "error-remote-getjson"
