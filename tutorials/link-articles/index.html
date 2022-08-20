@@ -1,37 +1,333 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.68.3"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Link Articles | Connectome | KausalFlow</title><meta name=author content="KausalFlow"><meta property="og:title" content="Link Articles"><meta property="og:description" content="There are three different ways to link notes:
- use links in the note metadata, this will be covered in the current note, use shortcode c to add a hyperlink in the texts, see [[Link to Another Page and Show Hovercard]]  Link to Another Page and Show Hovercard Apart from the normal markdown links, e.g., [this link](snm/single-neuron-model) we can also link to other page using the following code. {{< c &#34;tutorials/embed-articles."><meta property="og:type" content="article"><meta property="og:url" content="https://hugo-connectome.kausalflow.com/tutorials/link-articles/"><meta property="article:published_time" content="2021-05-01T00:00:00+00:00"><meta property="article:modified_time" content="2021-05-01T00:00:00+00:00"><link rel=canonical href=https://hugo-connectome.kausalflow.com/tutorials/link-articles/><link rel="shortcut icon" type=image/png href=/logos/logo-square.png><link rel=stylesheet href=/css/bulma.css><link rel=stylesheet href=/css/bulma-divider.min.css><link rel=stylesheet href=/assets/css/bulma-ribbon.min.css><link rel=stylesheet href=/assets/css/tooltip.css><link rel=stylesheet href=https://unpkg.com/bulmaswatch/united/bulmaswatch.min.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/blog-post.css><link rel=stylesheet href=/css/code-highlighting/dark.css><link rel=stylesheet href=/css/custom.css><script type=module src=https://unpkg.com/ninja-keys?module></script><link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel=stylesheet><ninja-keys placeholder="Type a command"><slot name=footer></slot></ninja-keys><script>const hotkeys=[{id:"Home",title:"Go to Home",hotkey:"cmd+h",mdIcon:"home",handler:()=>{console.log("navigation to home");window.open("https:\/\/hugo-connectome.kausalflow.com","_self")}},{id:"Graph",title:"View Graph",hotkey:"cmd+g",mdIcon:"blur_circular",handler:()=>{console.log("navigation to home");window.open("https:\/\/hugo-connectome.kausalflow.com/graph","_self")}},{id:"All Notebooks",title:"All Notebooks",mdIcon:"book",handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com/projects","_self")}},{id:"Search by Title",title:"Search by Title",mdIcon:"search",children:[{id:'search-Graph of Connected Articles',title:'Search: Graph of Connected Articles',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/graph-of-connected-articles\/","_self")}},{id:'search-Spiking Neuron Models Reading Club',title:'Search: Spiking Neuron Models Reading Club',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/snm\/spiking-neuron-models-club\/","_self")}},{id:'search-The Elements of Statistical Learning',title:'Search: The Elements of Statistical Learning',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/esl\/the-elements-of-statistical-learning\/","_self")}},{id:'search-Comments',title:'Search: Comments',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/comment-system\/","_self")}},{id:'search-Linear Methods for Regression',title:'Search: Linear Methods for Regression',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/esl\/linear-methods-for-regresssion\/","_self")}},{id:'search-Single Neuron Models',title:'Search: Single Neuron Models',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/snm\/single-neuron-model\/","_self")}},{id:'search-Upvote Button at the Bottom of the Page',title:'Search: Upvote Button at the Bottom of the Page',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/upvote-button-at-bottom\/","_self")}},{id:'search-Guass-Markov Theorem and Multiple Regression',title:'Search: Guass-Markov Theorem and Multiple Regression',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/esl\/gauss-markov-theorem\/","_self")}},{id:'search-Limitations of spike response model and coding',title:'Search: Limitations of spike response model and coding',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/snm\/limitations-srm-contd-and-coding\/","_self")}},{id:'search-Link Articles',title:'Search: Link Articles',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/link-articles\/","_self")}},{id:'search-Link to Another Page and Show Hovercard',title:'Search: Link to Another Page and Show Hovercard',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/link-to-other-page\/","_self")}},{id:'search-Embed Articles',title:'Search: Embed Articles',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/embed-articles\/","_self")}},{id:'search-Adding References',title:'Search: Adding References',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/references\/","_self")}},{id:'search-Command Palette',title:'Search: Command Palette',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/command-palette\/","_self")}},{id:'search-How to Use',title:'Search: How to Use',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/how-to-use\/","_self")}},{id:'search-Connectome Tutorials',title:'Search: Connectome Tutorials',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/projects\/tutorials\/","_self")}},{id:'search-Spiking Neuron Models',title:'Search: Spiking Neuron Models',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/projects\/snm\/","_self")}},{id:'search-The Elements of Statistical Learning',title:'Search: The Elements of Statistical Learning',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/projects\/esl\/","_self")}},{id:'search-ABOUT',title:'Search: ABOUT',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/about\/","_self")}},{id:'search-',title:'Search: ',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/typography\/","_self")}},{id:'search-(Test Non English Languages)贝叶斯统计、罕见疾病和抽奖问题',title:'Search: (Test Non English Languages)贝叶斯统计、罕见疾病和抽奖问题',parent:'Search by Title',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/posts\/articles\/2015-05-10-bayesian\/","_self")}},]},{id:"backlinks",title:"Backlinks",parent:"Current Note",mdIcon:"keyboard_return",children:[{id:'backlinks-Graph of Connected Articles',title:'Backlink: Graph of Connected Articles',parent:'backlinks',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/graph-of-connected-articles\/","_self")}},]},{id:"linksto",title:"Links",parent:"Current Note",mdIcon:"logout",children:[{id:'linksto-Tutorials',title:'Links: Tutorials',parent:'linksto',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/","_self")}},{id:'linksto-Link to Another Page and Show Hovercard',title:'Links: Link to Another Page and Show Hovercard',parent:'linksto',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/link-to-other-page\/","_self")}},{id:'linksto-Embed Articles',title:'Links: Embed Articles',parent:'linksto',handler:()=>{window.open("https:\/\/hugo-connectome.kausalflow.com\/tutorials\/embed-articles\/","_self")}},]},{id:"current-note-ref-id",title:"Current Note ID",parent:"Current Note",mdIcon:"fingerprint",handler:()=>{navigator.clipboard.writeText("tutorials\/link-articles.md");}},];const ninja=document.querySelector("ninja-keys");ninja.data=hotkeys;</script><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:true,processEnvironments:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}};window.addEventListener('load',(event)=>{document.querySelectorAll("mjx-container").forEach(function(x){x.parentElement.classList+='has-jax'})});</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script><script>mermaid.initialize({startOnLoad:true});</script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer><script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script></head><body><header><nav class="navbar is-transparent"><div class=navbar-brand><a class=navbar-item href=/><img src=/logos/logo-square.png alt=Connectome height=28 style=margin-right:.5em> Connectome</a><div class="navbar-burger burger" style=color:#000 data-target=navMenu><span></span><span></span><span></span></div></div><div class=navbar-menu id=navMenu><div class=navbar-start><div class="navbar-item has-dropdown is-hoverable"><a href=/projects class=navbar-link>Notebooks</a><div class=navbar-dropdown><a href=https://hugo-connectome.kausalflow.com/snm/ class=navbar-item>Spiking Neural Network</a>
-<a href=https://hugo-connectome.kausalflow.com/esl/ class=navbar-item>The Element of Statistical Learning</a>
-<a href=https://hugo-connectome.kausalflow.com/tutorials/ class=navbar-item>Tutorials</a></div></div><div class="navbar-item has-dropdown is-hoverable"></div></div><span class=navbar-burger><span></span><span></span><span></span></span><div class=navbar-end><div class=navbar-item><a class=navbar-item href=/posts/>Posts</a>
-<a class=navbar-item href=/tags/><i class="fas fa-tags"></i></a><a class=navbar-item href=/graph><i class="fas fa-project-diagram"></i></a><a class=navbar-item target=blank href=https://github.com/kausalflow><span class=icon><i class="fab fa-github"></i></span></a></div></div></div></nav><script>document.addEventListener('DOMContentLoaded',()=>{const $navbarBurgers=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);if($navbarBurgers.length>0){$navbarBurgers.forEach(el=>{el.addEventListener('click',()=>{const target=el.dataset.target;const $target=document.getElementById(target);console.log("target",target)
-console.log("$target",$target)
-el.classList.toggle("is-active");console.log("active el",el)
-console.log("active $target",$target)});});}});</script></header><main><div class=container itemscope itemtype=http://schema.org/BlogPosting><meta itemprop=name content="Link Articles"><meta itemprop=description content="There are three different ways to link notes:
- use links in the note metadata, this will be covered in the current note, use shortcode c to add a hyperlink in the texts, see [[Link to Another Page and Show Hovercard]]  Link to Another Page and Show Hovercard Apart from the normal markdown links, e.g., [this link](snm/single-neuron-model) we can also link to other page using the following code. {{< c &#34;tutorials/embed-articles."><meta itemprop=datePublished content="2021-05-01T00:00:00+00:00"><meta itemprop=dateModified content="2021-05-01T00:00:00+00:00"><meta itemprop=wordCount content="258"><meta itemprop=keywords content="Tutorial,"><section class=section><div class=container><article class=post><header class=post-header><nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs><ul><li><a href=https://hugo-connectome.kausalflow.com/>Connectome</a></li><li><a href=https://hugo-connectome.kausalflow.com/tutorials/>Tutorials</a></li><li class=active><a href=https://hugo-connectome.kausalflow.com/tutorials/link-articles/>Link Articles</a></li></ul></nav><h1 class="post-title has-text-left is-size-1" itemprop="name headline">Link Articles</h1><div class="title is-6 has-text-left" style=margin-top:1em><i class='<i class="fa-solid fa-leaf" style="margin-right: 0.5em;"></i>' style=margin-right:.5em;color:#e95420></i><a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
-<span class=tooltiptext>This note is being developed. It is readible but changes are being applied.</span></a></div><div class="title is-6 has-text-left" style=margin-top:1em><i class="fa-solid fa-fingerprint" style=margin-right:.5em></i><a class=tooltip><span title=tutorials/link-articles.md class="tag is-success is-small is-light" style=color:#e95420><b>tutorials/link-articles.md</b></span>
-<span class=tooltiptext>Current Note ID: The unique ID of this note.</span></a></div><div class="title is-6 has-text-left" style=margin-top:1em><i class="fas fa-tags" style=margin-right:.5em></i><a href=/tags/tutorial><span class="tag is-warning is-small is-light">#Tutorial</span></a></div></header><div class=columns><div class="column is-12"><div class=is-divider data-content=ARTICLE></div><div class="content blog-post section" itemprop=articleBody><p>There are three different ways to link notes:</p><ul><li>use <code>links</code> in the note metadata, this will be covered in the current note,</li><li>use shortcode <code>c</code> to add a hyperlink in the texts, see
-<span class=tooltip><a href=https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/>[[Link to Another Page and Show Hovercard]]</a>
-<span class=tooltiptext><span class=tooltip_title>Link to Another Page and Show Hovercard</span>
+<!doctype html><html lang=en-us>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Link Articles | Connectome | KausalFlow </title>
+<meta name=author content="KausalFlow">
+<meta property="og:title" content="Link Articles">
+<meta property="og:description" content="There are three different ways to link notes:
+ use links in the note metadata, this will be covered in the current note, use shortcode c to add a hyperlink in the texts, see [[Link to Another Page and Show Hovercard]]  Link to Another Page and Show Hovercard Apart from the normal markdown links, e.g., [this link](snm/single-neuron-model) we can also link to other page using the following code. {{< c &#34;tutorials/embed-articles.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hugo-connectome.kausalflow.com/tutorials/link-articles/"><meta property="article:section" content="tutorials">
+<meta property="article:published_time" content="2021-05-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-05-01T00:00:00+00:00">
+<link rel=canonical href=https://hugo-connectome.kausalflow.com/tutorials/link-articles/> <link rel="shortcut icon" type=image/png href=/logos/logo-square.png>
+<link rel=stylesheet href=/css/bulma.css>
+<link rel=stylesheet href=/css/bulma-divider.min.css>
+<link rel=stylesheet href=/assets/css/bulma-ribbon.min.css>
+<link rel=stylesheet href=/assets/css/tooltip.css>
+<link rel=stylesheet href=https://unpkg.com/bulmaswatch/united/bulmaswatch.min.css>
+<link rel=stylesheet href=/css/custom.css>
+<link rel=stylesheet href=/css/blog-post.css>
+<link rel=stylesheet href=/css/code-highlighting/dark.css>
+<link rel=stylesheet href=/css/custom.css>
+<script type=module src=https://unpkg.com/ninja-keys?module></script>
+<link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel=stylesheet>
+<ninja-keys placeholder="Type a command">
+<slot name=footer></slot>
+</ninja-keys>
+<script>const hotkeys=[{id:"Home",title:"Go to Home",hotkey:"cmd+h",mdIcon:"home",handler:()=>{console.log("navigation to home"),window.open("https://hugo-connectome.kausalflow.com","_self")}},{id:"Graph",title:"View Graph",hotkey:"cmd+g",mdIcon:"blur_circular",handler:()=>{console.log("navigation to home"),window.open("https://hugo-connectome.kausalflow.com/graph","_self")}},{id:"All Notebooks",title:"All Notebooks",mdIcon:"book",handler:()=>{window.open("https://hugo-connectome.kausalflow.com/projects","_self")}},{id:"Search by Title",title:"Search by Title",mdIcon:"search",children:[{id:'search-Graph of Connected Articles',title:'Search: Graph of Connected Articles',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/graph-of-connected-articles/","_self")}},{id:'search-Spiking Neuron Models Reading Club',title:'Search: Spiking Neuron Models Reading Club',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/snm/spiking-neuron-models-club/","_self")}},{id:'search-The Elements of Statistical Learning',title:'Search: The Elements of Statistical Learning',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/esl/the-elements-of-statistical-learning/","_self")}},{id:'search-Comments',title:'Search: Comments',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/comment-system/","_self")}},{id:'search-Linear Methods for Regression',title:'Search: Linear Methods for Regression',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/esl/linear-methods-for-regresssion/","_self")}},{id:'search-Single Neuron Models',title:'Search: Single Neuron Models',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/snm/single-neuron-model/","_self")}},{id:'search-Upvote Button at the Bottom of the Page',title:'Search: Upvote Button at the Bottom of the Page',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/upvote-button-at-bottom/","_self")}},{id:'search-Guass-Markov Theorem and Multiple Regression',title:'Search: Guass-Markov Theorem and Multiple Regression',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/esl/gauss-markov-theorem/","_self")}},{id:'search-Limitations of spike response model and coding',title:'Search: Limitations of spike response model and coding',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/snm/limitations-srm-contd-and-coding/","_self")}},{id:'search-Link Articles',title:'Search: Link Articles',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/link-articles/","_self")}},{id:'search-Link to Another Page and Show Hovercard',title:'Search: Link to Another Page and Show Hovercard',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/","_self")}},{id:'search-Embed Articles',title:'Search: Embed Articles',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/embed-articles/","_self")}},{id:'search-Adding References',title:'Search: Adding References',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/references/","_self")}},{id:'search-Command Palette',title:'Search: Command Palette',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/command-palette/","_self")}},{id:'search-How to Use',title:'Search: How to Use',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/how-to-use/","_self")}},{id:'search-Connectome Tutorials',title:'Search: Connectome Tutorials',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/projects/tutorials/","_self")}},{id:'search-Spiking Neuron Models',title:'Search: Spiking Neuron Models',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/projects/snm/","_self")}},{id:'search-The Elements of Statistical Learning',title:'Search: The Elements of Statistical Learning',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/projects/esl/","_self")}},{id:'search-ABOUT',title:'Search: ABOUT',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/about/","_self")}},{id:'search-',title:'Search: ',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/typography/","_self")}},{id:'search-(Test Non English Languages)贝叶斯统计、罕见疾病和抽奖问题',title:'Search: (Test Non English Languages)贝叶斯统计、罕见疾病和抽奖问题',parent:'Search by Title',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/posts/articles/2015-05-10-bayesian/","_self")}}]},{id:"backlinks",title:"Backlinks",parent:"Current Note",mdIcon:"keyboard_return",children:[{id:'backlinks-Graph of Connected Articles',title:'Backlink: Graph of Connected Articles',parent:'backlinks',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/graph-of-connected-articles/","_self")}}]},{id:"linksto",title:"Links",parent:"Current Note",mdIcon:"logout",children:[{id:'linksto-Tutorials',title:'Links: Tutorials',parent:'linksto',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/","_self")}},{id:'linksto-Link to Another Page and Show Hovercard',title:'Links: Link to Another Page and Show Hovercard',parent:'linksto',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/","_self")}},{id:'linksto-Embed Articles',title:'Links: Embed Articles',parent:'linksto',handler:()=>{window.open("https://hugo-connectome.kausalflow.com/tutorials/embed-articles/","_self")}}]},{id:"current-note-ref-id",title:"Current Note ID",parent:"Current Note",mdIcon:"fingerprint",handler:()=>{navigator.clipboard.writeText("tutorials/link-articles.md")}}],ninja=document.querySelector("ninja-keys");ninja.data=hotkeys</script>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],tags:'ams',processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},svg:{fontCache:'global'}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin=anonymous referrerpolicy=no-referrer>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+</head>
+<body>
+<header> <nav class="navbar is-transparent">
+<div class=navbar-brand>
+<a class=navbar-item href=/>
+<img src=/logos/logo-square.png alt=Connectome height=28 style=margin-right:.5em> Connectome
+</a>
+<div class="navbar-burger burger" style=color:#000 data-target=navMenu>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=navbar-menu id=navMenu>
+<div class=navbar-start>
+<div class="navbar-item has-dropdown is-hoverable">
+<a href=/projects class=navbar-link>
+Notebooks
+</a>
+<div class=navbar-dropdown>
+<a href=https://hugo-connectome.kausalflow.com/snm/ class=navbar-item>
+Spiking Neural Network
+</a>
+<a href=https://hugo-connectome.kausalflow.com/esl/ class=navbar-item>
+The Element of Statistical Learning
+</a>
+<a href=https://hugo-connectome.kausalflow.com/tutorials/ class=navbar-item>
+Tutorials
+</a>
+</div>
+</div>
+<div class="navbar-item has-dropdown is-hoverable">
+</div>
+</div>
+<span class=navbar-burger>
+<span></span>
+<span></span>
+<span></span>
+</span>
+<div class=navbar-end>
+<div class=navbar-item>
+<a class=navbar-item href=/posts/>
+Posts
+</a>
+<a class=navbar-item href=/tags/>
+<i class="fas fa-tags"></i>
+</a>
+<a class=navbar-item href=/graph>
+<i class="fas fa-project-diagram"></i>
+</a>
+<a class=navbar-item target=blank href=https://github.com/kausalflow>
+<span class=icon>
+<i class="fab fa-github"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',()=>{const a=Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'),0);a.length>0&&a.forEach(a=>{a.addEventListener('click',()=>{const b=a.dataset.target,c=document.getElementById(b);console.log("target",b),console.log("$target",c),a.classList.toggle("is-active"),console.log("active el",a),console.log("active $target",c)})})})</script>
+</header>
+<main>
+<div class=container itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Link Articles">
+<meta itemprop=description content="There are three different ways to link notes:
+ use links in the note metadata, this will be covered in the current note, use shortcode c to add a hyperlink in the texts, see [[Link to Another Page and Show Hovercard]]  Link to Another Page and Show Hovercard Apart from the normal markdown links, e.g., [this link](snm/single-neuron-model) we can also link to other page using the following code. {{< c &#34;tutorials/embed-articles."><meta itemprop=datePublished content="2021-05-01T00:00:00+00:00">
+<meta itemprop=dateModified content="2021-05-01T00:00:00+00:00">
+<meta itemprop=wordCount content="258">
+<meta itemprop=keywords content="Tutorial,">
+<section class=section>
+<div class=container>
+<article class=post>
+<header class=post-header>
+<nav class="breadcrumb has-succeeds-separator is-small" aria-label=breadcrumbs>
+<ul>
+<li>
+<a href=https://hugo-connectome.kausalflow.com/>Connectome</a>
+</li>
+<li>
+<a href=https://hugo-connectome.kausalflow.com/tutorials/>Tutorials</a>
+</li>
+<li class=active>
+<a href=https://hugo-connectome.kausalflow.com/tutorials/link-articles/>Link Articles</a>
+</li>
+</ul>
+</nav>
+<h1 class="post-title has-text-left is-size-1" itemprop="name headline">
+Link Articles
+</h1>
+<div class="title is-6 has-text-left" style=margin-top:1em>
+<i class='<i class="fa-solid fa-leaf" style="margin-right: 0.5em;"></i>' style=margin-right:.5em;color:#e95420></i>
+<a class=tooltip><span style=color:#e95420 class="tag is-warning is-small is-light">GROWING</span>
+<span class=tooltiptext>This note is being developed. It is readible but changes are being applied.</span>
+</a>
+</div>
+<div class="title is-6 has-text-left" style=margin-top:1em>
+<i class="fa-solid fa-fingerprint" style=margin-right:.5em></i>
+<a class=tooltip><span title=tutorials/link-articles.md class="tag is-success is-small is-light" style=color:#e95420><b>tutorials/link-articles.md</b></span>
+<span class=tooltiptext>Current Note ID: The unique ID of this note.</span>
+</a>
+</div>
+<div class="title is-6 has-text-left" style=margin-top:1em>
+<i class="fas fa-tags" style=margin-right:.5em></i>
+<a href=/tags/tutorial><span class="tag is-warning is-small is-light">#Tutorial</span></a>
+</div>
+</header>
+<div class=columns>
+<div class="column is-12">
+<div class=is-divider data-content=ARTICLE></div>
+<div class="content blog-post section" itemprop=articleBody>
+<p>There are three different ways to link notes:</p>
+<ul>
+<li>use <code>links</code> in the note metadata, this will be covered in the current note,</li>
+<li>use shortcode <code>c</code> to add a hyperlink in the texts, see
+<span class=tooltip><a href=https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/>
+[[Link to Another Page and Show Hovercard]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Link to Another Page and Show Hovercard</span>
 <span class=tooltip_content>Apart from the normal markdown links, e.g.,
 [this link](snm/single-neuron-model) we can also link to other page using the following code.
 {{&lt; c "tutorials/embed-articles.md" >}} The result will be this: [[Embed Articles]] Embed Articles Embed an article using the shortcode . By hovering on this link, a preview of the summary of the target post.
 Do not Ignore the Spaces
-Please make sure the is at least one space between the different components of the shortcode.</span></span></span>
-,</li><li>use shortcode <code>e</code> to embed another note in the current note, see
-<span class=tooltip><a href=https://hugo-connectome.kausalflow.com/tutorials/embed-articles/>[[Embed Articles]]</a>
-<span class=tooltiptext><span class=tooltip_title>Embed Articles</span>
-<span class=tooltip_content>Embed an article using the shortcode</span></span></span>
-.</li></ul><p>All three methods will generate backlinks for the notes linked to.</p><p>Articles can be linked by adding a the reference of the target post to the meta data of the current post, e.g.,</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>links</span>:
-  - snm/single-neuron-model.md
-  - tags/gauss-markov-theorem
-</code></pre></div><p>The ref of the target post can be</p><ul><li>the path to the markdown file inside the <code>content</code> folder, such as <code>snm/single-neuron-model.md</code>,</li><li>the path to the tag page, such as <code>tags/gauss-markov-theorem</code>.</li></ul><p>If one needs to find the ref of a post, it is found on the right of the content. For example, the following screenshot shows the ref of this article.</p><figure><img src=../assets/link-articles/current-ref.png alt="Current ref of the post is shown on the right of the articles."><figcaption><div class="title is-4">Current Ref</div><p>Current ref of the post is shown on the right of the articles.</p></figcaption></figure></div><p><div class="has-text-right is-size-7"><span class=icon><i class="fas fa-pencil-alt"></i></span>Planted: <time datetime=2021-05-01T00:00:00+00:00>2021-05-01</time>
-by <span itemprop=author>KausalFlow</span>;</div></p></div></div><div class=is-size-8></div><div class=is-size-8></div><div id=connectome class=is-divider data-content=CONNECTUME></div><div class=is-size-8><div style=margin-bottom:1em><span style=font-weight:700><i class="fa-solid fa-turn-down"></i>Dynamic Backlinks:</span></div><div class="columns is-multiline is-mobile"><div class="column is-half"><a class=box href=https://hugo-connectome.kausalflow.com/tutorials/graph-of-connected-articles/><div class=media-content><div class=content><div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Graph of Connected Articles
-<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span></div><div style=font-size:80%>All articles that are connected by [[using links in metadata]] Link Articles There are three …</div></div></div></a></div></div></div><div class=is-size-8 style=margin-top:2em><div style=margin-bottom:1em><span style=font-weight:700><i class="fa-solid fa-turn-up"></i>Links to:</span></div><div class="columns is-multiline is-mobile"><div class="column is-half"><a class=box href=https://hugo-connectome.kausalflow.com/tutorials/><div class=media-content><div class=content><div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Tutorials
-<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span></div><div style=font-size:80%>Tutorial articles for Hugo Connectome Theme</div></div></div></a></div></div></div><div class=is-size-8><div style=margin-bottom:1em;margin-top:1em><span style=font-weight:700><i class="fa-solid fa-arrow-right-from-bracket"></i>Additional Double Backet Links:</span></div><div class="columns is-multiline is-mobile"><div class="column is-half"><a class=box href=https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/><div class=media-content><div class=content><div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Link to Another Page and Show Hovercard
-<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span></div><div style=font-size:80%>Apart from the normal markdown links, e.g.,
-[this link](snm/single-neuron-model) we can also link to …</div></div></div></a></div><div class="column is-half"><a class=box href=https://hugo-connectome.kausalflow.com/tutorials/embed-articles/><div class=media-content><div class=content><div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Embed Articles
-<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span></div><div style=font-size:80%>Embed an article using the shortcode</div></div></div></a></div></div></div><div class=is-size-8></div><div class=columns><div class="column is-12"></div></div><div class=columns><div class="column is-12"><div class=is-divider data-content=Cite></div><div class="box is-size-8"><article class=media><div class=media-content><div class=content><p>KausalFlow (2021). 'Link Articles', Connectome, 05 April. Available at: https://hugo-connectome.kausalflow.com/tutorials/link-articles/.</p></div></div></article></div></div></div><div class=is-divider data-content=Nav></div><nav class="pagination is-centered" role=navigation aria-label=pagination><a href="https://hugo-connectome.kausalflow.com/tutorials/upvote-button-at-bottom/?ref=footer" class=pagination-previous>« Upvote Button at the Bottom of the Page</a>
-<a class=pagination-next href="https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/?ref=footer">Link to Another Page and Show Hovercard »</a></nav></article></div></section></div><div class=navtools><a class="button is-primary is-light is-outlined" alt="Edit this page" href=https://github.com/kausalflow/hugo-connectome-theme-demo/edit/master/content/tutorials/link-articles.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fas fa-pencil-alt"></i></a><a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px><i class="far fa-comments"></i></a><a class="button is-primary is-light is-outlined" href=#connectome alt=Connectome style=position:fixed;bottom:100px;right:10px;border-radius:9999px;width:35px;height:35px><i class="fa-solid fa-brain"></i></a><a title="Use Command+K or Windows+K" class="button is-primary is-light is-outlined" style=width:35px;height:35px;position:fixed;bottom:140px;right:10px;border-radius:9999px onclick="document.querySelector('ninja-keys').open()"><i class="fa-solid fa-terminal"></i></a></div></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://hugo-connectome.kausalflow.com>KausalFlow</a>.
+Please make sure the is at least one space between the different components of the shortcode.</span>
+</span>
+</span>
+,</li>
+<li>use shortcode <code>e</code> to embed another note in the current note, see
+<span class=tooltip><a href=https://hugo-connectome.kausalflow.com/tutorials/embed-articles/>
+[[Embed Articles]]
+</a>
+<span class=tooltiptext>
+<span class=tooltip_title>Embed Articles</span>
+<span class=tooltip_content>Embed an article using the shortcode</span>
+</span>
+</span>
+.</li>
+</ul>
+<p>All three methods will generate backlinks for the notes linked to.</p>
+<p>Articles can be linked by adding a the reference of the target post to the meta data of the current post, e.g.,</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>links</span>:
+  - <span style=color:#ae81ff>snm/single-neuron-model.md</span>
+  - <span style=color:#ae81ff>tags/gauss-markov-theorem</span>
+</code></pre></div><p>The ref of the target post can be</p>
+<ul>
+<li>the path to the markdown file inside the <code>content</code> folder, such as <code>snm/single-neuron-model.md</code>,</li>
+<li>the path to the tag page, such as <code>tags/gauss-markov-theorem</code>.</li>
+</ul>
+<p>If one needs to find the ref of a post, it is found on the right of the content. For example, the following screenshot shows the ref of this article.</p>
+<figure>
+<img src=../assets/link-articles/current-ref.png alt="Current ref of the post is shown on the right of the articles."> <figcaption>
+<div class="title is-4">Current Ref</div><p>Current ref of the post is shown on the right of the articles.</p>
+</figcaption>
+</figure>
+</div>
+<p><div class="has-text-right is-size-7">
+<span class=icon>
+<i class="fas fa-pencil-alt"></i>
+</span>
+Planted: <time datetime=2021-05-01T00:00:00+00:00>2021-05-01</time>
+by <span itemprop=author>KausalFlow</span>;
+</div></p>
+</div>
+</div>
+<div class=is-size-8>
+</div>
+<div class=is-size-8>
+</div>
+<div id=connectome class=is-divider data-content=CONNECTUME></div>
+<div class=is-size-8>
+<div class="notification is-warning is-light">
+No backlinks identified. Reference this note using the Note ID <code>tutorials/link-articles.md</code> in other notes to connect them.
+</div>
+</div>
+<div class=is-size-8 style=margin-top:2em>
+<div style=margin-bottom:1em>
+<span style=font-weight:700><i class="fa-solid fa-turn-up"></i> Links to: </span>
+</div>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
+<a class=box href=https://hugo-connectome.kausalflow.com/tutorials/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Tutorials
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Tutorial articles for Hugo Connectome Theme
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class=is-size-8>
+<div style=margin-bottom:1em;margin-top:1em><span style=font-weight:700><i class="fa-solid fa-arrow-right-from-bracket"></i> Additional Double Backet Links: </span></div>
+<div class="columns is-multiline is-mobile">
+<div class="column is-half">
+<a class=box href=https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Link to Another Page and Show Hovercard
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Apart from the normal markdown links, e.g.,
+[this link](snm/single-neuron-model) we can also link to …
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="column is-half">
+<a class=box href=https://hugo-connectome.kausalflow.com/tutorials/embed-articles/>
+<div class=media-content>
+<div class=content>
+<div class="title is-6" style="padding-bottom:.8em;border-bottom:1px dotted #999">Embed Articles
+<span style=float:right><i class="fa-solid fa-bookmark" style=color:#999></i></span>
+</div>
+<div style=font-size:80%>
+Embed an article using the shortcode
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class=is-size-8>
+</div>
+<div class=columns>
+<div class="column is-12">
+</div>
+</div>
+<div class=columns>
+<div class="column is-12">
+<div class=is-divider data-content=Cite></div>
+<div class="box is-size-8">
+<article class=media>
+<div class=media-content>
+<div class=content>
+<p>
+KausalFlow (2021). 'Link Articles', Connectome, 05 April. Available at: https://hugo-connectome.kausalflow.com/tutorials/link-articles/.
+</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+<div class=is-divider data-content=Nav></div>
+<nav class="pagination is-centered" role=navigation aria-label=pagination>
+<a href="https://hugo-connectome.kausalflow.com/tutorials/upvote-button-at-bottom/?ref=footer" class=pagination-previous>« Upvote Button at the Bottom of the Page</a>
+<a class=pagination-next href="https://hugo-connectome.kausalflow.com/tutorials/link-to-other-page/?ref=footer">Link to Another Page and Show Hovercard »</a>
+</nav>
+</article>
+</div>
+</section>
+</div>
+<div class=navtools>
+<a class="button is-primary is-light is-outlined" title alt="Edit this page" href=https://github.com/kausalflow/hugo-connectome-theme-demo/edit/master/content/tutorials/link-articles.md target=blank style=position:fixed;bottom:20px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fas fa-pencil-alt"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#comments alt=Comments style=position:fixed;bottom:60px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="far fa-comments"></i>
+</a>
+<a class="button is-primary is-light is-outlined" href=#connectome alt=Connectome style=position:fixed;bottom:100px;right:10px;border-radius:9999px;width:35px;height:35px>
+<i class="fa-solid fa-brain"></i>
+</a>
+<a title="Use Command+K or Windows+K" class="button is-primary is-light is-outlined" style=width:35px;height:35px;position:fixed;bottom:140px;right:10px;border-radius:9999px onclick="document.querySelector('ninja-keys').open()"><i class="fa-solid fa-terminal"></i></a>
+</div>
+</main>
+<footer>
+<footer class=footer>
+<div class=container>
+<div class="content has-text-centered">
+<p>
+Created and maintained by <a href=https://hugo-connectome.kausalflow.com>KausalFlow</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
 <a href=https://themes.gohugo.io/bulma/>Bulma</a>, <a href=https://kausalflow.com>KausalFlow</a>.
-<strong>love</strong>.<br><a class=tag href=/index.xml>Feed</a>
-<a class=tag href=/data.json>JSON Data</a></p></div></div></footer></footer><script async type=text/javascript src=/js/bulma.js></script><script type=application/json class=js-hypothesis-config>{"openSidebar":false,"theme":"clean","enableExperimentalNewNoteButton":true,"showHighlights":true}</script><script async src=https://hypothes.is/embed.js></script></body></html>
+<strong>love</strong>.
+<br>
+<a class=tag href=/index.xml>Feed</a>
+<a class=tag href=/data.json>JSON Data</a>
+</p>
+</div>
+</div>
+</footer>
+</footer>
+<script async type=text/javascript src=/js/bulma.js></script>
+<script type=application/json class=js-hypothesis-config>{"openSidebar":false,"theme":"clean","enableExperimentalNewNoteButton":true,"showHighlights":true}</script>
+<script async src=https://hypothes.is/embed.js></script>
+</body>
+</html>
